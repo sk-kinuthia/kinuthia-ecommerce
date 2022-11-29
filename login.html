@@ -1,0 +1,42 @@
+<html>
+<head>
+  <title>Register Form</title>
+<link rel="stylesheet" href="./css/register.css">
+<body>
+ <form action="crud.php" method="POST">
+  <table>
+   <tr>
+    <td>Name :</td>
+    <td><input type="text" placeholder="Enter Name" name="username" required></td>
+   </tr>
+   <tr>
+    <td>Password :</td>
+    <td><input type="password" placeholder="Enter Password"  name="password" required></td>
+   </tr>
+   <tr>
+    <td>Gender :</td>
+    <td>
+     <input type="text" placeholder="Enter gender"  name="gender" value="m" required>
+     <!-- <input type="text" name="gender" value="f" required> -->
+    </td>
+   </tr>
+   <tr>
+    <td>Email :</td>
+    <td><input type="email" placeholder="Enter Email"  name="email" required></td>
+   </tr> 
+   <tr>
+    <td>Phone no :</td>
+    <td
+     
+     <input type="text" placeholder="Enter country code"  name="phoneCode">
+     <input type="phone" class="pon" placeholder="Enter phone number"  name="phone" required>
+    </td>
+   </tr>
+   <tr>
+    <td><input type="submit" value="Submit" name="submit"></td>
+   </tr>
+  </table>
+ </form>
+
+</body>
+</html>

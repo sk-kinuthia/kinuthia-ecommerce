@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;1,400&family=Bai+Jamjuree:wght@200;300;400;500;600&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200&family=Ceviche+One&family=Concert+One&family=Cormorant+SC:wght@300;400;500;600;700&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&family=Lobster&family=Odibee+Sans&family=Open+Sans:wght@400;700&family=Outfit:wght@300;400;600&family=Poppins:wght@600&family=Red+Hat+Display:wght@500;700;900&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Rubik:wght@400;500;700&family=Zen+Antique+Soft&display=swap"
+        rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+    <title>Frontend Mentor | E-commerce product page</title>
+</head>
+
+<body>
+    <!--Start of the menu section-->
+    <div class="header">
+        <div class="logo"> <img src="./images/logo.svg" alt="" srcset=""> </div>
+        <div class="header-container">
+            <ul class="menu-items">
+           
+                <li><a href="collections.html">collections</a></li>
+            <li><a href="men.html">MEN</a></li>
+            <li><a href="login.html">login</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="connection.html">connection</a></li>
+            </ul>
+        </div>
+
+        <div class="menu-items-2">
+            <div class="menu-img-1"><img onclick="popUpWindow();" onclick="closeWindow() " src="./images/icon-cart.svg" alt=""> </div>
+            <div class="menu-img-2"><img class="img-avatar" src="./images/image-avatar.png" alt=""> </div>
+        </div>
+    </div>
+
+    <!--End of the menu section-->
+    <!--Start of the body section-->
+    <div class="main-container">
+        <div class="container-item-1">
+            <div class="container-item-1-main-image">
+                <div class="container-main-product"><img onclick='openModal(); currentSlide(1);' class="img-product" src="./images/image-product-1.jpg" alt=""></div>
+            </div>
+            <div class="container-item-1-thumbnails">
+                <div id="img-thumbnail-1" class="container-1-items"><img class="img-thumbnail" src="./images/image-product-1-thumbnail.jpg" alt=""></div>
+                <div id="img-thumbnail-2" class="container-1-items"><img class="img-thumbnail" src="./images/image-product-2-thumbnail.jpg" alt=""></div>
+                <div id="img-thumbnail-3" class="container-1-items"><img class="img-thumbnail" src="./images/image-product-3-thumbnail.jpg" alt=""></div>
+                <div id="img-thumbnail-4" class="container-1-items"><img class="img-thumbnail" src="./images/image-product-4-thumbnail.jpg" alt=""></div>
+            </div>
+        </div>
+        <div class="container-item-2">
+            <div class="container-item-2-heading">Sneaker company</div>
+            <p class="container-item-2-text1">Fall Limited Edition Sneakers</p>
+            <div class="container-item-2-text2">
+                These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.
+            </div>
+            <div class="price-tags">
+                <div class="price-tag-1">$125.00</div>
+                <div class="price-tag-2">50%</div>
+                <div class="price-tag-3">$250.00</div>
+            </div>
+            <div class="add-cart-main">
+                <div class="add-cart-item-1">
+                    <div><img class="img-add-cart-minus" src="./images/icon-minus.svg" alt=""></div>
+                    <div class="add-cart-text">0</div>
+                    <div class="add-cart-text-2">0</div>
+                    <div><img class="img-add-cart-plus" src="./images/icon-plus.svg" alt=""></div>
+
+                </div>
+                <div class="add-cart-item-2 p-add">
+                    <div><img class="img-cart-icon" src="/images/icon-cart.svg" alt=""></div>
+                    <div>Add to cart</div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!--End of the body section-->
+    <!--Start of Light box-->
+    <!--Modal/light box-->
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+            <div class="mySlides">
+                <div class="numbertext">1 / 4</div>
+                <img src="./images/image-product-1.jpg" class="img-product-slides">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 4</div>
+                <img src="./images/image-product-2.jpg" class="img-product-slides">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 4</div>
+                <img src="./images/image-product-3.jpg" class="img-product-slides">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 4</div>
+                <img src="./images/image-product-4.jpg" class="img-product-slides">
+            </div>
+
+            <!-- Next/previous controls -->
+            <img src="./images/icon-previous.svg" class="prev" onclick="plusSlides(-1)" ></img>
+            <img src="./images/icon-next.svg " class="next " onclick="plusSlides(1) "></img>
+
+            <!-- Thumbnail image controls -->
+            <div class="demos ">
+                <div class="column ">
+                    <img class="demo img-thumbnail-demos " src="./images/image-product-1-thumbnail.jpg " onclick="currentSlide(1) " alt="Nature ">
+                </div>
+
+                <div class="column ">
+                    <img class="demo img-thumbnail-demos " src="./images/image-product-2-thumbnail.jpg " onclick="currentSlide(2) " alt="Snow ">
+                </div>
+
+                <div class="column ">
+                    <img class="demo img-thumbnail-demos " src="./images/image-product-3-thumbnail.jpg " onclick="currentSlide(3) " alt="Mountains ">
+                </div>
+
+                <div class="column ">
+                    <img class="demo img-thumbnail-demos " src="./images/image-product-4-thumbnail.jpg " onclick="currentSlide(4) " alt="Lights ">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--End of light box-->
+
+     <!--Start of the cat styling-->
+     <div id="myWindow " class="window " >
+        <span class="closely cursor " onclick="closeWindow() ">&times;</span>
+        <div class="popup-cart-heading ">Cart</div>
+        <div class="pop-cart-content ">
+            <div class="pop-up-text ">
+                 <!-- (A2) CURRENT CART ITEMS -->
+                 <div id="cart-items ">Your cart is empty</div>  
+            </div>
+        </div>
+     </div>
+
+     <template id="template-cart ">
+        <div id="c-item ">
+            <div class="template-arrangement ">
+                <div>
+                    <img class="img-cart-thumbnail " src="./images/image-product-1-thumbnail.jpg " alt=" ">
+                </div>
+               <div class="cart-total ">
+                <div class="c-name "></div>
+                <div class="cart-total-text "></div>
+               </div>
+                <div><img src="./images/icon-delete.svg " class="c-del "></img></div>
+            </div>
+            <div class="checkout ">
+                <button class="c-checkout cart " onclick="cart.checkout() ">Checkout</button>
+            </div>
+            
+          <div class="c-qty " type="number " min="0 "></div>
+        </div>
+    </template>
+        <template id="template-cart-checkout ">
+          <button class="c-empty cart " onclick="cart.nuke() ">Empty</button>
+          <button class="c-checkout cart " onclick="cart.checkout() ">Checkout</button>
+        </template>
+    
+      <!--End of the cart styling-->
+
+
+
+
+
+
+    <div class="attribution ">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge " target="_blank ">Frontend Mentor</a>. Coded by <a href="# ">Nickonyi</a>.
+    </div>
+    <script src="./js/script.js "></script>
+    <script src="./js/cart.js "></script>
+    <script src="./js/products.js "></script>
+</body>
+
+</html>

@@ -1,0 +1,502 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 400;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.header {
+    display: flex;
+    gap: 50px;
+    margin: 60px;
+    border-bottom: 1px solid hsla(228, 7%, 86%, 0.9);
+    padding-bottom: 40px;
+}
+
+.menu-items {
+    display: flex;
+    gap: 30px;
+    color: hsla(227, 8%, 67%, 0.9);
+}
+
+.menu-items-2 {
+    margin-left: auto;
+    margin-right: 150px;
+    display: flex;
+    gap: 50px;
+}
+
+.img-avatar {
+    height: auto;
+    width: 50px;
+    position: absolute;
+    top: 40px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.main-container {
+    display: flex;
+    gap: 80px;
+}
+
+.container-item-1 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+}
+
+.container-item-2 {
+    height: 500px;
+    width: 600px;
+}
+
+.container-item-1-thumbnails {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.container-item-1-thumbnails:hover {
+    cursor: pointer;
+}
+
+.container-item-2-heading {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: hsl(26, 100%, 55%);
+    font-family: 'Kumbh Sans';
+    margin-bottom: 20px;
+}
+
+.container-item-2-text1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: hsl(218, 24%, 13%);
+}
+
+.container-item-2-text2 {
+    margin-top: 40px;
+    font-size: 22px;
+    color: hsl(219, 9%, 45%)
+}
+
+.img-product {
+    height: 500px;
+    width: auto;
+    border-radius: 10px;
+}
+
+.img-thumbnail {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.img-thumbnail:hover {
+    border: 2px solid hsl(39, 100%, 50%);
+    opacity: 0.3;
+}
+
+.price-tags {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+    gap: 15px;
+}
+
+.price-tag-1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.price-tag-2 {
+    position: absolute;
+    top: 495px;
+    left: 810px;
+    background: hsl(25, 100%, 94%);
+    padding: 10px;
+    color: hsl(26, 100%, 55%);
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+.price-tag-3 {
+    color: hsl(220, 14%, 75%);
+    text-decoration: line-through;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.add-cart-main {
+    margin-top: 30px;
+    display: flex;
+    gap: 30px;
+}
+
+.add-cart-item-1 {
+    width: 150px;
+    background: hsl(210, 7%, 94%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.add-cart-item-2 {
+    border: 1px solid;
+    display: flex;
+    padding: 15px;
+    padding-left: 50px;
+    gap: 15px;
+    width: 250px;
+    text-align: center;
+    background: hsl(26, 100%, 55%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 5px;
+    box-shadow: 15px 15px, rgb(255, 165, 0);
+}
+
+.add-cart-item-2:hover {
+    cursor: pointer;
+}
+
+
+/*------------------------------Light box---------------------*/
+
+
+/* Create four equal columns that floats next to eachother */
+
+.demos {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0, 0.6);
+}
+
+
+/* Modal Content */
+
+.modal-content {
+    position: relative;
+    margin: auto;
+    padding-bottom: 30px;
+    width: 550px;
+}
+
+
+/* The Close Button */
+
+.close {
+    color: white;
+    position: absolute;
+    top: 8%;
+    right: 30%;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* Hide the slides by default */
+
+.mySlides {
+    display: none;
+}
+
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 20px;
+    margin-top: -20px;
+    background-color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 50%;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+
+/* Position the "next button" and the previous button */
+
+.next {
+    right: -20px;
+}
+
+.prev {
+    left: -20px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+/* Caption text */
+
+.caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+}
+
+.img-thumbnail-demos {
+    width: 105px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.img-thumbnail-demos:hover {
+    border: 2px solid hsl(39, 100%, 50%);
+    opacity: 0.7;
+}
+
+.active,
+.demo:hover {
+    opacity: 0.6;
+}
+
+img.hover-shadow {
+    transition: 0.3s;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.img-product-slides {
+    height: auto;
+    width: 550px;
+    border-radius: 10px;
+}
+
+
+/*------------------------------Cart---------------------*/
+
+.menu-img-1:hover,
+.menu-img-2:hover {
+    cursor: pointer;
+}
+
+.popup {
+    width: 200px;
+    height: 200px;
+}
+
+.window {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    padding-top: 100px;
+    left: 70%;
+    top: 110px;
+    width: 300px;
+    height: 200px;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 0 0 10px 10px rgb(48, 45, 45, 0.3);
+}
+
+.closely {
+    position: absolute;
+    top: -60px;
+    right: 155px;
+    font-size: 35px;
+    font-weight: bold;
+    color: rgba(202, 186, 186, 0.2);
+}
+
+.closely:hover {
+    cursor: pointer;
+}
+
+.popup-cart-heading {
+    border-bottom: 1px solid rgb(247, 242, 242);
+    height: 60px;
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 30px;
+    color: rgb(48, 45, 45);
+    font-weight: bold;
+}
+
+.pop-up-text {
+    text-align: center;
+    font-weight: 700;
+    color: grey;
+    font-size: 1.2rem;
+}
+
+.img-cart-thumbnail {
+    width: 40px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.template-arrangement {
+    display: flex;
+    margin-top: -10px;
+    justify-content: space-around;
+}
+
+.c-name {
+    font-size: 16px;
+}
+
+.add-cart-text-2 {
+    background: hsl(26, 100%, 55%);
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    top: 50px;
+    left: 80%;
+    color: hsl(0, 0%, 100%);
+    font-size: 10px;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 20%;
+}
+
+.img-add-cart-minus:hover,
+.img-add-cart-plus:hover {
+    cursor: pointer;
+}
+
+.s-total {
+    text-align: left;
+    font-size: 16px;
+}
+
+.t-total {
+    font-size: 18px;
+    color: rgb(27, 24, 24);
+    font-weight: bold;
+}
+
+.cart-total-text {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.c-checkout {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    color: hsl(0, 0%, 100%);
+    background: hsl(39, 100%, 50%);
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+.checkout {
+    padding: 0 10px 0 10px;
+}
+
+/*=============================== STYLING ============================= */
+
+
+
+form{
+
+    max-width: 800px;
+    margin:  5rem auto;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    /* min-height: 30em; */
+    
+}
+table{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 5em;
+  
+}
+tr, td{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+input{
+    padding: 1em 5em;
+    border-radius: 20px;
+}
+input[type="submit"]{
+    margin-bottom: 2em;
+    margin-top: 2em;
+    cursor: pointer;
+    background-color: blanchedalmond;
+}

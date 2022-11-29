@@ -1,0 +1,40 @@
+
+/*=============================== STYLING ============================= */
+
+
+
+form{
+
+    max-width: 800px;
+    margin:  5rem auto;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    /* min-height: 30em; */
+    
+}
+table{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 5em;
+  
+}
+tr, td{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+input{
+    padding: 1em 5em;
+    border-radius: 20px;
+}
+input[type="submit"]{
+    margin-bottom: 2em;
+    margin-top: 2em;
+    cursor: pointer;
+    background-color: blanchedalmond;
+}
+body{
+    background-color: aqua;
+}
